@@ -313,7 +313,7 @@ const sneakerConfig = [
     sneakerName: "Zoom Kobe 6 Protro 'Reverse Grinch'",
     styleNumber: "FV4921-600",
     dollarPrice: 190,
-    purchaseOrder: 3,
+    purchaseOrder: 20,
     brand: "Nike",
     image: KobeReverseGrinch,
     status: "OWNED",
