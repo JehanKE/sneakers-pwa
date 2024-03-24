@@ -88,6 +88,7 @@ const SneakerPage = () => {
             <label className="detail-content" style={{color:sneakerPage.detailHex}}>
               <DatePicker 
                 onChange={handleDateChange}
+                inputReadOnly={true}
                 defaultValue=
                   {lastWorn[sneakerPage.styleNumber] === null 
                     ? null 
