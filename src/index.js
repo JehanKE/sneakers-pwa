@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import { Provider } from "react-redux";
 import { persistor, store } from './configs/redux/store';
 import PWAPrompt from 'react-ios-pwa-prompt'
@@ -12,16 +12,25 @@ import LocationProvider from './components/RouteContainer/LocationProvider';
 import RoutesWithAnimation from './components/RouteContainer/RoutesWithAnimation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route 
+      path="*" 
+      element={          
+        <LocationProvider>
+          <RoutesWithAnimation />
+        </LocationProvider>
+      }
+    />
+));
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <PWAPrompt />
-        <BrowserRouter>
-          <LocationProvider>
-            <RoutesWithAnimation />
-          </LocationProvider>
-        </BrowserRouter>
+        <RouterProvider router={router} />
       </PersistGate>
     </Provider>
   </React.StrictMode>
