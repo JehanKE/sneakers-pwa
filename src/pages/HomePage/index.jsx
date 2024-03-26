@@ -7,6 +7,7 @@ import Tabs from "../../components/Tabs";
 import { sneakerConfig } from "../../configs/SneakerConfig";
 import { getSortedList } from "../../utils/utils";
 import { AutoComplete } from 'antd';
+import { motion } from "framer-motion";
 import "./index.scss";
 
 const HomePage = () => {
@@ -70,7 +71,12 @@ const HomePage = () => {
 
   return (
     <>
-      <div className={isOpaque ? "opaque-home-container" : "home-container"}>
+      <motion.div 
+        className={isOpaque ? "opaque-home-container" : "home-container"}
+        initial={{ y: -20 }}
+        animate={{ y: 0 }}
+        transition={{duration: 0.7,ease: [0.6, -0.05, 0.01, 0.99]}}
+      >
         <div className="home-header">
           <div className="header-title">COLLECTION</div>
           <div className="header-tabs">
@@ -109,7 +115,7 @@ const HomePage = () => {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
       <FloatingMenu />
     </>
   );
