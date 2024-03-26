@@ -324,7 +324,7 @@ const sneakerConfig = [
   },
   {
     URL: "https://www.goat.com/sneakers/one-piece-x-suede-whitebeard-396524-01",
-    purchaseLocation: "StockX",
+    purchaseLocation: "StockX, March 2024",
     sneakerName: "One Piece x Suede 'Straw Hat Luffy'",
     styleNumber: "396524-01",
     dollarPrice: 85,
