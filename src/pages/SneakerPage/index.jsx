@@ -5,6 +5,7 @@ import { BsFillBagFill } from "react-icons/bs";
 import { mapBrandToIcon } from "../../utils/utils";
 import { useEffect } from "react";
 import { DatePicker } from 'antd';
+import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import "./index.scss";
 
@@ -35,7 +36,12 @@ const SneakerPage = () => {
   };
 
   return (
-    <div className="sneaker-page-container">
+    <motion.div 
+      className="sneaker-page-container"
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{duration: 0.7,ease: [0.6, -0.05, 0.01, 0.99]}}
+    >
       <div className="sneaker-page-header">
         <Link to="/" className="back-link">
           <IoIosArrowBack className="back-icon" style={{color:sneakerPage.iconHex}}/>
@@ -101,7 +107,7 @@ const SneakerPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,6 +9,7 @@ React Icons: https://react-icons.github.io/react-icons/
 <br/>Ant UI: https://ant.design/
 <br/>iOS PWA Promt: https://www.npmjs.com/package/react-ios-pwa-prompt
 <br/>DayJS: https://day.js.org/en/
+<br/>Framer Motion: https://www.framer.com/motion/
 
 ### Endpoints used:
 Currency API: https://github.com/fawazahmed0/exchange-api

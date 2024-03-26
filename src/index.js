@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { persistor, store } from './configs/redux/store';
-import router from '../src/configs/RouterConfig';
 import PWAPrompt from 'react-ios-pwa-prompt'
 import { PersistGate } from 'redux-persist/integration/react';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import LocationProvider from './components/RouteContainer/LocationProvider';
+import RoutesWithAnimation from './components/RouteContainer/RoutesWithAnimation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,11 @@ root.render(
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <PWAPrompt />
-        <RouterProvider router={router} />
+        <BrowserRouter>
+          <LocationProvider>
+            <RoutesWithAnimation />
+          </LocationProvider>
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>
