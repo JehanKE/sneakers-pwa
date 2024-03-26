@@ -19,6 +19,7 @@ const initialState = {
     status: "OWNED",
     color: "Red",
   },
+  scrollPostion: 0
 };
 
 export const sneakerSlice = createSlice({
@@ -42,6 +43,9 @@ export const sneakerSlice = createSlice({
     },
     updateSneakerPage: (state, action) => {
       state.sneakerPage = action.payload;
+    },
+    updateScrollPosition: (state, action) => {
+      state.scrollPostion = action.payload;
     },
   },
 });

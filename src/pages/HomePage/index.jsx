@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import "./index.scss";
 
 const HomePage = () => {
-  const { listType, isOpaque, sortType } = useSelector(
+  const { listType, isOpaque, sortType, scrollPostion } = useSelector(
     (state) => state.sneaker
   );
   const { lastWorn } = useSelector((state) => state.lastWorn);
@@ -69,6 +69,17 @@ const HomePage = () => {
     }
   }
 
+  const setReturnScroll = () => {
+    dispatch({
+      type: "sneaker/updateScrollPosition",
+      payload: window.pageYOffset,
+    });
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: scrollPostion})
+  });
+
   return (
     <>
       <motion.div 
@@ -111,7 +122,7 @@ const HomePage = () => {
               />
             </div>
             {sneakerList?.map((sneaker, idx) => {
-              return <SneakerContainer key={idx} sneaker={sneaker} />;
+              return <SneakerContainer key={idx} sneaker={sneaker} storeScrollPosition={setReturnScroll}/>;
             })}
           </div>
         </div>

@@ -11,6 +11,7 @@ const SneakerContainer = (props) => {
   const sneakerName = props.sneaker.sneakerName;
   const sneakerPrice = props.sneaker.dollarPrice;
   const styleNumber = props.sneaker.styleNumber;
+  const storeScroll = props.storeScrollPosition;
   const dispatch = useDispatch();
 
   const handleLinkClick = () => {
@@ -18,6 +19,7 @@ const SneakerContainer = (props) => {
       type: "sneaker/updateSneakerPage",
       payload: props.sneaker,
     });
+    storeScroll();
   };
 
   return (
