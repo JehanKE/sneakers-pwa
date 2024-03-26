@@ -331,7 +331,7 @@ const sneakerConfig = [
     purchaseOrder: 21,
     brand: "Puma",
     image: PumaGear5,
-    status: "WISH LIST",
+    status: "OWNED",
     color: "White",
     releaseDate: "23 MARCH 2024",
     detailHex: '#9B92F2',
