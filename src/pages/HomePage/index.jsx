@@ -77,7 +77,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    window.scrollTo({ top: scrollPostion})
+    window.scrollTo({top: scrollPostion})
   });
 
   return (
