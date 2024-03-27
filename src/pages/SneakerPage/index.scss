@@ -1,11 +1,12 @@
 .sneaker-page-container {
   height: 100dvh;
-  width: 100%;
+  width: 100dvw;
   position: absolute;
   top: 0;
   left: 0;
   font-family: sans-serif;
   font-size: 1rem;
+  overflow-x: hidden;
 
   .sneaker-page-header {
     background-color: black;
