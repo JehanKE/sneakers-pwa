@@ -50,6 +50,7 @@ const FloatingMenu = (props) => {
           );
         })}
       </FloatButton.Group>
+      {isOpen && <FloatButton.BackTop type={'primary'} style={{right: 85}}/>}
     </div>
   );
 };

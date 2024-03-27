@@ -48,6 +48,10 @@ const HomePage = () => {
 
   const handleTabChange = (selectedTab) => {
     dispatch({
+      type: "sneaker/updateScrollPosition",
+      payload: 0,
+    });
+    dispatch({
       type: "sneaker/updateListType",
       payload: selectedTab,
     });
