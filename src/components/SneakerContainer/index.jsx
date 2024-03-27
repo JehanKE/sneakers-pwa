@@ -25,8 +25,8 @@ const SneakerContainer = (props) => {
   return (
     <div className="item-container ">
       <Link
-        to={isOpaque ? "/" : "/sneaker"}
-        className={"sneaker-link"}
+        to={"/sneaker"}
+        className={isOpaque ? "disabled-link" : "sneaker-link"}
         onClick={handleLinkClick}
       >
         <div className="sneaker-list-item">

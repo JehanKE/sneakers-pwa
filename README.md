@@ -16,8 +16,3 @@ Currency API: https://github.com/fawazahmed0/exchange-api
 
 ### Deployment:
 https://vercel.com/
-
-
-### TO-DO:
-3. Disable clicks instead of routing to / when floating menu is open
-5. Fix sneaker page width issue

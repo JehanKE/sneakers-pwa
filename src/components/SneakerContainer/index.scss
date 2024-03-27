@@ -6,8 +6,20 @@
   align-self: center;
   padding-left: 2%;
   cursor: pointer;
+  &:focus {
+    background-color: none;
+  }
 
   .sneaker-link {
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+
+  .disabled-link {
+    pointer-events: none;
     color: black;
     font-weight: bold;
     font-size: 0.8rem;
