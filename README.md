@@ -20,5 +20,4 @@ https://vercel.com/
 
 ### TO-DO:
 3. Disable clicks instead of routing to / when floating menu is open
-4. Fix header clipping issue
 5. Fix sneaker page width issue
