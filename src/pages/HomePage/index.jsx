@@ -104,7 +104,7 @@ const HomePage = () => {
         </div>
         <div>
           <div className="home-summary-container">
-            <SummaryContainer list={sneakerList} />
+            <SummaryContainer list={sneakerList} storeScrollPosition={setReturnScroll} />
           </div>
           <div className="sneaker-list-container">
             <div className="sneaker-list-header">

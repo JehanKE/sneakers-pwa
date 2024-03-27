@@ -6,6 +6,7 @@ import "./index.scss";
 const SummaryContainer = (props) => {
   const { currency, conversionRate } = useSelector((state) => state.sneaker);
   const sneakerList = props.list;
+  const storeScrollPosition = props.storeScrollPosition;
   const [totalVal, setTotalVal] = useState();
   const [sneakerCount, setSneakerCount] = useState();
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const SummaryContainer = (props) => {
   }, [sneakerList]);
 
   const handleCurrencyChange = async () => {
+    storeScrollPosition();
     let convRate;
     if(conversionRate === null) {
       const response = await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json');
