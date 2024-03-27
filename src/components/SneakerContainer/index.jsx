@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import ConditionalWrapper from "../ConditionalWrapper";
 import "./index.scss";
 
 const SneakerContainer = (props) => {
@@ -24,12 +25,19 @@ const SneakerContainer = (props) => {
 
   return (
     <div className="item-container ">
-      <Link
-        to={"/sneaker"}
-        className={isOpaque ? "disabled-link" : "sneaker-link"}
-        onClick={handleLinkClick}
+      <ConditionalWrapper
+        condition={isOpaque}
+        wrapper={children => 
+          <Link
+            to={"/sneaker"}
+            className={"sneaker-link"}
+            onClick={handleLinkClick}
+          >
+            {children}
+          </Link>
+        }
       >
-        <div className="sneaker-list-item">
+      <div className="sneaker-list-item">
           <img
             className="sneaker-item-image"
             src={sneakerImage}
@@ -54,7 +62,7 @@ const SneakerContainer = (props) => {
             </div>
           </div>
         </div>
-      </Link>
+      </ConditionalWrapper>
     </div>
   );
 };
