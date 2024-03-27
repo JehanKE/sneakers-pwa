@@ -19,8 +19,6 @@ https://vercel.com/
 
 
 ### TO-DO:
-1. Change HomePage to SneakerPage animation
-2. Chamge SneakerPage to HomePage animation
 3. Disable clicks instead of routing to / when floating menu is open
 4. Fix header clipping issue
 5. Fix sneaker page width issue
