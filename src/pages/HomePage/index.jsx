@@ -7,10 +7,11 @@ import Tabs from "../../components/Tabs";
 import { sneakerConfig } from "../../configs/SneakerConfig";
 import { getSortedList } from "../../utils/utils";
 import { AutoComplete } from 'antd';
+import { motion } from "framer-motion";
 import "./index.scss";
 
 const HomePage = () => {
-  const { listType, isOpaque, sortType } = useSelector(
+  const { listType, isOpaque, sortType, scrollPostion } = useSelector(
     (state) => state.sneaker
   );
   const { lastWorn } = useSelector((state) => state.lastWorn);
@@ -47,6 +48,10 @@ const HomePage = () => {
 
   const handleTabChange = (selectedTab) => {
     dispatch({
+      type: "sneaker/updateScrollPosition",
+      payload: 0,
+    });
+    dispatch({
       type: "sneaker/updateListType",
       payload: selectedTab,
     });
@@ -68,9 +73,25 @@ const HomePage = () => {
     }
   }
 
+  const setReturnScroll = () => {
+    dispatch({
+      type: "sneaker/updateScrollPosition",
+      payload: window.pageYOffset,
+    });
+  };
+
+  useEffect(() => {
+    window.scrollTo({top: scrollPostion})
+  });
+
   return (
     <>
-      <div className={isOpaque ? "opaque-home-container" : "home-container"}>
+      <motion.div 
+        className={isOpaque ? "opaque-home-container" : "home-container"}
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: isOpaque ? '20%' : 1 }}
+        transition={{duration: 0.7,ease: [0.6, -0.05, 0.01, 0.99]}}
+      >
         <div className="home-header">
           <div className="header-title">COLLECTION</div>
           <div className="header-tabs">
@@ -105,12 +126,12 @@ const HomePage = () => {
               />
             </div>
             {sneakerList?.map((sneaker, idx) => {
-              return <SneakerContainer key={idx} sneaker={sneaker} />;
+              return <SneakerContainer key={idx} sneaker={sneaker} storeScrollPosition={setReturnScroll} />;
             })}
           </div>
         </div>
-      </div>
-      <FloatingMenu />
+      </motion.div>
+      <FloatingMenu storeScrollPosition={setReturnScroll} />
     </>
   );
 };

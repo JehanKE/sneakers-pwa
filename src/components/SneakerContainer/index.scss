@@ -6,7 +6,9 @@
   align-self: center;
   padding-left: 2%;
   cursor: pointer;
-  animation: fade-in 1s;
+  &:focus {
+    background-color: none;
+  }
 
   .sneaker-link {
     color: black;
