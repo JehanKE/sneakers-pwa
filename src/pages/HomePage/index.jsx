@@ -127,7 +127,7 @@ const HomePage = () => {
           </div>
         </div>
       </motion.div>
-      <FloatingMenu />
+      <FloatingMenu storeScrollPosition={setReturnScroll} />
     </>
   );
 };

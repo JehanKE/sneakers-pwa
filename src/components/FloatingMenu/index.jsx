@@ -5,11 +5,13 @@ import { MenuOptions } from "../../configs/FloatingMenuConfig";
 import { useState } from "react";
 import "./index.scss";
 
-const FloatingMenu = () => {
+const FloatingMenu = (props) => {
+  const { storeScrollPosition } = props;
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
 
   const handleFltContainerClick = () => {
+    storeScrollPosition();
     dispatch({
       type: "sneaker/updateIsOpaque",
     });
