@@ -1,11 +1,16 @@
 .item-container {
-  border-top: 2px solid #e5e4e4;
+  border: 2px solid #e5e4e4;
   font-family: sans-serif;
   font-weight: bold;
-  width: 90%;
+  width: 95%;
   align-self: center;
   padding-left: 2%;
   cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.1em;
+  border-radius: 5px;
+  background-color: white;
   &:focus {
     background-color: none;
   }
