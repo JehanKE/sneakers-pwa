@@ -108,11 +108,14 @@ const HomePage = () => {
           </div>
           <div className="sneaker-list-container">
             <div className="sneaker-list-header">
-              <label className="sneaker-title">SNEAKERS</label>
               <AutoComplete
                 style={{
-                  width: "100%",
-                  alignSelf: "center"
+                  width: "92%",
+                  backgroundColor: "white",
+                  boxShadow: "0px 0px 5px 5px #ebebeb",
+                  borderRadius: "5px",
+                  border: "2px solid #e5e4e4",
+                  height: "40px"
                 }}
                 options={options}
                 placeholder="Search"

@@ -54,12 +54,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  background-color: #F5F5F5;
 
   .sneaker-list-header {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 0.5% 0% 0.5% 4%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
     .sneaker-title {
       letter-spacing: 4px;
