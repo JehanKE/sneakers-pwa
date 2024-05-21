@@ -110,7 +110,7 @@ const HomePage = () => {
             <div className="sneaker-list-header">
               <AutoComplete
                 style={{
-                  width: "92.5%",
+                  width: "97.5%",
                   backgroundColor: "white",
                   boxShadow: "0px 0px 5px 5px #ebebeb",
                   borderRadius: "5px",
