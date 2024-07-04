@@ -8,7 +8,6 @@ import DualRun from "../resources/images/joyride_dual_run.webp";
 import KyrieFlytrap from "../resources/images/kyrie_flytrap.webp";
 import LebronAllStar from "../resources/images/lebron_xx_all_star.webp";
 import LukaAI from "../resources/images/luka_luk_ai.webp";
-import LvNikeAf1 from "../resources/images/lv_nike_af1.webp";
 import PumaCharm from "../resources/images/puma_charmander.webp";
 import RivalFly from "../resources/images/rival_fly_3.webp";
 import TatumPinkLemon from "../resources/images/tatum_pink_lemon.webp";
@@ -156,21 +155,6 @@ const sneakerConfig = [
     releaseDate: "13 MAY 2023",
     detailHex: '#E7C502',
     iconHex: '#E7C502'
-  },
-  {
-    URL: "https://www.goat.com/en-gb/sneakers/louis-vuitton-x-air-force-1-low-team-royal-friends-family-ms1211-royal",
-    purchaseLocation: "Gift, Bangalore, May 2023",
-    sneakerName: "Louis Vuitton x Air Force 1 Low 'Team Royal'",
-    styleNumber: "MS1211-ROYAL",
-    dollarPrice: 0,
-    purchaseOrder: 10,
-    brand: "Nike",
-    image: LvNikeAf1,
-    status: "OWNED",
-    color: "Blue",
-    releaseDate: "JULY 19 2021",
-    detailHex: '#3D5DB2',
-    iconHex: '#3D5DB2'
   },
   {
     URL: "https://www.goat.com/sneakers/lebron-20-all-star-dv1191-400",
