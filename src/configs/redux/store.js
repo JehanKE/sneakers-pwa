@@ -9,7 +9,9 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  blacklist: ['lastWorn']
+  whitelist: ['lastWorn']
+  // When adding new sneaker will have to push blacklist first to update
+  // blacklist: ['lastWorn']
 };
 
 const reducer = combineReducers({
