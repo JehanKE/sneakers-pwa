@@ -20,6 +20,7 @@ import Jordan4Sb from "../resources/images/jordan_4_sb_pine.webp";
 import PumaGear5 from "../resources/images/puma_gear_5.webp";
 import KobeReverseGrinch from "../resources/images/kobe_reverse_grinch.webp";
 import JordanYearOfDragon from "../resources/images/jordan_year_of_dragon.webp";
+import AE1NewWave from "../resources/images/ae_1_new_wave.webp";
 
 const sneakerConfig = [
   {
@@ -336,6 +337,21 @@ const sneakerConfig = [
     releaseDate: "23 MARCH 2024",
     detailHex: '#9B92F2',
     iconHex: '#9B92F2'
+  },
+  {
+    URL: "https://www.goat.com/sneakers/ae-1-new-wave-if1860",
+    purchaseLocation: "Superkicks, Bangalore, August 2024",
+    sneakerName: "Adidas AE 1 'New Wave'",
+    styleNumber: "IF1860",
+    dollarPrice: 120,
+    purchaseOrder: 22,
+    brand: "Adidas",
+    image: AE1NewWave,
+    status: "OWNED",
+    color: "Blue",
+    releaseDate: "25 JANUARY 2024",
+    detailHex: '#3E7A7A',
+    iconHex: '#3E7A7A'
   },
   {
     URL: "https://www.goat.com/en-gb/sneakers/air-zoom-vomero-5-doernbecher-2023-fd9711-602",
