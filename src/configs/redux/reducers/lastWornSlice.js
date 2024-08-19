@@ -23,7 +23,8 @@ const initialState = {
         "FN3727-100": null,
         "FV4921-600": null,
         "396524-01": null,
-        "FD9711-602": null
+        "FD9711-602": null,
+        "IF1860": null
     }
 };
 
