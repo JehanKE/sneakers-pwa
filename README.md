@@ -7,7 +7,7 @@ React Icons: https://react-icons.github.io/react-icons/
 <br/>Redux Toolkit: https://redux-toolkit.js.org/
 <br/>Redux Persist: https://www.npmjs.com/package/redux-persist
 <br/>Ant UI: https://ant.design/
-<br/>iOS PWA Promt: https://www.npmjs.com/package/react-ios-pwa-prompt
+<br/>iOS PWA Prompt: https://www.npmjs.com/package/react-ios-pwa-prompt
 <br/>DayJS: https://day.js.org/en/
 <br/>Framer Motion: https://www.framer.com/motion/
 
