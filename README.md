@@ -16,3 +16,8 @@ Currency API: https://github.com/fawazahmed0/exchange-api
 
 ### Deployment:
 https://vercel.com/
+
+### Dev Notes:
+To add new sneaker:
+1. Add details to SneakerConfig.js
+2. Add style number to lastWornSlice.js
