@@ -21,6 +21,7 @@ import PumaGear5 from "../resources/images/puma_gear_5.webp";
 import KobeReverseGrinch from "../resources/images/kobe_reverse_grinch.webp";
 import JordanYearOfDragon from "../resources/images/jordan_year_of_dragon.webp";
 import AE1NewWave from "../resources/images/ae_1_new_wave.webp";
+import JordanBred from "../resources/images/jordan_bred.png";
 
 const sneakerConfig = [
   {
@@ -352,6 +353,21 @@ const sneakerConfig = [
     releaseDate: "25 JANUARY 2024",
     detailHex: '#3E7A7A',
     iconHex: '#3E7A7A'
+  },
+  {
+    URL: "https://www.goat.com/sneakers/air-jordan-1-mid-bred-twist-dq8426-067",
+    purchaseLocation: "Jordan World of Flight, Shibuya, Tokyo",
+    sneakerName: "Air Jordan 1 Mid 'Bred Twist'",
+    styleNumber: "DQ8426-067",
+    dollarPrice: 125,
+    purchaseOrder: 23,
+    brand: "Jordan",
+    image: JordanBred,
+    status: "OWNED",
+    color: "Red",
+    releaseDate: "20 DECEMBER 2024",
+    detailHex: '#8e011c',
+    iconHex: '#8e011c'
   },
   {
     URL: "https://www.goat.com/en-gb/sneakers/air-zoom-vomero-5-doernbecher-2023-fd9711-602",
