@@ -3,6 +3,16 @@
   "name": "Jehan's Sneaker Collection",
   "icons": [
     {
+      "src": "icons/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
       "src": "sneaker.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
