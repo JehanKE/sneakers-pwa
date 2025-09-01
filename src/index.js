@@ -10,6 +10,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import LocationProvider from './components/RouteContainer/LocationProvider';
 import RoutesWithAnimation from './components/RouteContainer/RoutesWithAnimation';
+import AndroidPwaPrompt from './components/AndroidPwaPrompt';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,6 +32,7 @@ root.render(
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <PWAPrompt />
+        <AndroidPwaPrompt />
         <RouterProvider router={router} />
       </PersistGate>
     </Provider>
