@@ -22,6 +22,7 @@ import KobeReverseGrinch from "../resources/images/kobe_reverse_grinch.webp";
 import JordanYearOfDragon from "../resources/images/jordan_year_of_dragon.webp";
 import AE1NewWave from "../resources/images/ae_1_new_wave.webp";
 import JordanBred from "../resources/images/jordan_bred.png";
+import NewBalance1906PinkTaffy from "../resources/images/new_balance_1906r_pink_taffy.webp"
 
 const sneakerConfig = [
   {
@@ -356,7 +357,7 @@ const sneakerConfig = [
   },
   {
     URL: "https://www.goat.com/sneakers/air-jordan-1-mid-bred-twist-dq8426-067",
-    purchaseLocation: "Jordan World of Flight, Shibuya, Tokyo",
+    purchaseLocation: "Jordan World of Flight, Shibuya, Tokyo, March 2025",
     sneakerName: "Air Jordan 1 Mid 'Bred Twist'",
     styleNumber: "DQ8426-067",
     dollarPrice: 125,
@@ -368,6 +369,21 @@ const sneakerConfig = [
     releaseDate: "20 DECEMBER 2024",
     detailHex: '#8e011c',
     iconHex: '#8e011c'
+  },
+  {
+    URL: "https://www.goat.com/sneakers/1906r-pink-taffy-u1906rcu",
+    purchaseLocation: "New Balance, Bangalore, March 2026",
+    sneakerName: "New Balance 1906R 'Pink Taffy'",
+    styleNumber: "U1906RCU",
+    dollarPrice: 155,
+    purchaseOrder: 24,
+    brand: "New Balance",
+    image: NewBalance1906PinkTaffy,
+    status: "OWNED",
+    color: "Black",
+    releaseDate: "08 JANUARY 2025",
+    detailHex: '#e0afba',
+    iconHex: '#e0afba'
   },
   {
     URL: "https://www.goat.com/en-gb/sneakers/air-zoom-vomero-5-doernbecher-2023-fd9711-602",
