@@ -57,7 +57,7 @@ const SneakerContainer = (props) => {
                   }`}
               </label>
               <label className="right-panel-last-worn">
-                {lastWorn[styleNumber] === null ? "DS" : lastWorn[styleNumber]}
+                {!lastWorn[styleNumber] ? "DS" : lastWorn[styleNumber]}
               </label>
             </div>
           </div>

@@ -25,7 +25,9 @@ const initialState = {
         "396524-01": null,
         "FD9711-602": null,
         "IF1860": null,
-        "DQ8426-067": null
+        "DQ8426-067": null,
+        "U1906RCU": null,
+        "IR1978-844": null
     }
 };
 
