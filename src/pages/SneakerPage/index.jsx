@@ -96,7 +96,7 @@ const SneakerPage = () => {
                 onChange={handleDateChange}
                 inputReadOnly={true}
                 defaultValue=
-                  {lastWorn[sneakerPage.styleNumber] === null 
+                  {!lastWorn[sneakerPage.styleNumber]
                     ? null 
                     : dayjs(lastWorn[sneakerPage.styleNumber], "DD-MM-YYYY")
                   } 

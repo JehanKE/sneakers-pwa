@@ -23,6 +23,7 @@ import JordanYearOfDragon from "../resources/images/jordan_year_of_dragon.webp";
 import AE1NewWave from "../resources/images/ae_1_new_wave.webp";
 import JordanBred from "../resources/images/jordan_bred.png";
 import NewBalance1906PinkTaffy from "../resources/images/new_balance_1906r_pink_taffy.webp"
+import AirMaxHypervenom from "../resources/images/air_max_ypervernom.webp"
 
 const sneakerConfig = [
   {
@@ -384,6 +385,21 @@ const sneakerConfig = [
     releaseDate: "08 JANUARY 2025",
     detailHex: '#e0afba',
     iconHex: '#e0afba'
+  },
+  {
+    URL: "https://www.goat.com/sneakers/nike-air-max-90-bright-citrus-hypervenom-ir1978-844",
+    purchaseLocation: "Superkicks, Bangalore, May 2026",
+    sneakerName: "Nike Air Max 90 'Bright Citrus Hypervenom'",
+    styleNumber: "IR1978-844",
+    dollarPrice: 150,
+    purchaseOrder: 26,
+    brand: "Nike",
+    image: AirMaxHypervenom,
+    status: "OWNED",
+    color: "Orange",
+    releaseDate: "21 MAY 2026",
+    detailHex: '#FEA654',
+    iconHex: '#FEA654'
   },
   {
     URL: "https://www.goat.com/en-gb/sneakers/air-zoom-vomero-5-doernbecher-2023-fd9711-602",
